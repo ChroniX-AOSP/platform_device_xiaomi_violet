@@ -14,6 +14,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 AFTERLIFE_GAPPS := true
 
+#Include ViperFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # AfterLife flags
 AFTERLIFE_MAINTAINER := chronix
 
