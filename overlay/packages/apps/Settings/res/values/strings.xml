@@ -14,6 +14,6 @@
 <resources>
    <string name="maintainer_git_username">Chronix-AOSP</string>
     <string name="maintainer_tele_username">Chronix_editz</string>
-    <string name="maintainer_ig_username">chronixaep</string>
+    <string name="maintainer_ig_username">chronix_aep</string>
     <string name="maintainer_fb_username">chronix</string>
 </resources>
