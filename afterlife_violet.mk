@@ -8,29 +8,19 @@
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common SuperiorOS stuff.
+# Inherit some common AfterlifeOS stuff.
 $(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
-AFTERLIFE_GAPPS := true
-
-#Include ViperFX
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
-
 # AfterLife flags
 AFTERLIFE_MAINTAINER := chronix
+AFTERLIFE_GAPPS := true
 
-# FaceUnlock
+# Misc
 TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# Blur 
 TARGET_SUPPORTS_BLUR := false
-
-# Pixel Charging
 USE_PIXEL_CHARGING := true
-
-# MiuiCamera
-$(call inherit-product, vendor/MiuiCamera/config.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := afterlife_violet
