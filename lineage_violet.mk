@@ -10,7 +10,6 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common lineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
 
 # RisingOS
 WITH_GMS := true
