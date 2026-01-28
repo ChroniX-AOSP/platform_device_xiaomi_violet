@@ -10,10 +10,12 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common AfterlifeOS stuff.
 $(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
+
+# MiuiCamera
+$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 
 # AfterLife flags
-AFTERLIFE_MAINTAINER := chronix
+AFTERLIFE_MAINTAINER := Chronix
 AFTERLIFE_GAPPS := true
 
 # Misc
